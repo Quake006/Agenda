@@ -1,13 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>listaContactos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title size="large">Lista Contactos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-header>
-    <ion-toolbar>
-      <ion-title size="large">Lista Contactos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      
+      <ion-button (click)="onClickDetalle()">Ir al detalle</ion-button>
+  
+      <ion-button color="success" (click)="onOpenModal()">Lanzar Modal</ion-button>
+ 
 </ion-content>

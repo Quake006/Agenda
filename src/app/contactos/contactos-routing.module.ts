@@ -18,6 +18,11 @@ const routes: Routes = [
     }
     ]
   },
+  {
+    path: 'detalle-contacto',
+    loadChildren: () => import('./detalle-contacto/detalle-contacto.module').then( m => m.DetalleContactoPageModule)
+  },
+
   
 ];
 
