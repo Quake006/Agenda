@@ -6,8 +6,19 @@ import { ContactosPage } from './contactos.page';
 const routes: Routes = [
   {
     path: '',
-    component: ContactosPage
-  }
+    component: ContactosPage,
+    children:[
+    {
+      path: 'listado',
+      loadChildren: () => import('./lista-contactos/lista-contactos.module').then( m => m.ListaContactosPageModule)
+    },
+    {
+      path: 'nuevo',
+      loadChildren: () => import('./nuevo-contacto/nuevo-contacto.module').then( m => m.NuevoContactoPageModule)
+    }
+    ]
+  },
+  
 ];
 
 @NgModule({
