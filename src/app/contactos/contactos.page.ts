@@ -17,8 +17,27 @@ export class ContactosPage implements OnInit {
    }
 
   ngOnInit() {
-    
+    console.log('[ngOnInit] contactos');
   }
+ // Ciclo de Vida
+  // ionViewWillEnter() {
+  //   console.log('[ionViewWillEnter] contactos');
+  // }
+
+  // ionViewDidEnter() {
+  //   console.log('[ionViewDidEnter] contactos');
+  // }
+
+  // ionViewWillLeave() {
+  //   console.log('[ionViewWillLeave] contactos');
+  // }
+
+  // ionViewDidLeave() {
+  //   console.log('[ionViewDidLeave] contactos');
+  // }
+
+
+
 
   pulsarNombre(contacto: any){
 console.log(contacto);

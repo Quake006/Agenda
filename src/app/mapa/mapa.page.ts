@@ -10,6 +10,30 @@ export class MapaPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('[ngOnInit] mapa');
   }
+// Ciclo de Vida
+  // ionViewWillEnter() {
+  //   console.log('[ionViewWillEnter] mapa');
+  // }
+
+  // ionViewDidEnter() {
+  //   console.log('[ionViewDidEnter] mapa');
+  // }
+
+  // ionViewWillLeave() {
+  //   console.log('[ionViewWillLeave] mapa');
+  // }
+
+  // ionViewDidLeave() {
+  //   console.log('[ionViewDidLeave] mapa');
+  // }
+
+
+
+
+
+
+
 
 }
