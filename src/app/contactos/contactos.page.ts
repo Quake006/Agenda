@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contactos',
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class ContactosPage implements OnInit {
 
   arr: string[];
-  constructor() {
-
+  constructor(
+    private router:Router
+  ) {
+    
     this.arr=['Mario', 'Laura', 'Rocío', 'Manuel']
    }
 
@@ -19,6 +22,13 @@ export class ContactosPage implements OnInit {
 
   pulsarNombre(contacto: any){
 console.log(contacto);
+  }
+
+  
+//Acciones previas a la navegación
+  navegarMapa(){
+this.router.navigate(['/mapa']);
+
   }
 
 }
