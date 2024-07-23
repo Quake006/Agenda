@@ -13,4 +13,20 @@
   
       <ion-button color="success" (click)="onOpenModal()">Lanzar Modal</ion-button>
  
+
+
+    
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <app-card nombre="Rocío" email="rocio@gmail.com" telefono="698745123"
+      (editarContacto)="onEditarContacto($event)"></app-card>
+    </ion-col>
+    <ion-col>
+      <app-card nombre="Manuel" email="anuel@gmail.com" telefono="698745123"
+      (editarContacto)="onEditarContacto($event)"></app-card>  
+    </ion-col>
+  </ion-row>
+</ion-grid>
+      
 </ion-content>

@@ -38,4 +38,10 @@ export class ListaContactosPage implements OnInit {
 
   }
   
+  onEditarContacto($event: string){
+    console.log($event);
+  }
+  
+
+
 }
